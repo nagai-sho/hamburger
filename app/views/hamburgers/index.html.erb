@@ -1,37 +1,39 @@
 <header class="header">
-  <div class="header__inner">
+  <div class="header_inner">
     <button id="js-hamburger" type="button" class="hamburger" aria-controls="navigation" aria-expanded="false" aria-label="メニューを開く">
-      <span class="hamburger__line"></span>
-      <span class="hamburger__text"></span>
+      <%# aria-controls: button要素が制御する別の要素のIDを指定 %>
+      <%# aria-expanded: 制御する別のグループ化要素が、展開されているか折りたたまれているかを示す %>
+      <span class="hamburger_line"></span>
+      <span class="hamburger_text"></span>
     </button>
-    <div class="header__nav-area js-nav-area" id="navigation">
+    <div class="header_nav-area js-nav-area" id="navigation">
       <nav id="js-global-navigation" class="global-navigation">
-        <ul class="global-navigation__list">
+        <ul class="global-navigation_list">
           <li>
-            <a href="#" class="global-navigation__link">
+            <a href="#" class="global-navigation_link">
               メニュー
             </a>
           </li>
           <li>
-            <button type="button" class="global-navigation__link -accordion js-sp-accordion-trigger" aria-expanded = 'false' aria-controls="accordion1">
+            <button type="button" class="global-navigation_link -accordion js-sp-accordion-trigger" aria-expanded = 'false' aria-controls="accordion1">
               親メニュー
             </button>
             <div id="accordion1" class="accordion js-accordion">
               <ul class="accordion__list">
                 <li>
-                  <a href="#" class="accordion__link">子メニュー</a>
+                  <a href="#" class="accordion_link">子メニュー</a>
                 </li>
                 <li>
-                  <a href="#" class="accordion__link">子メニュー</a>
+                  <a href="#" class="accordion_link">子メニュー</a>
                 </li>
                 <li>
-                  <a href="#" class="accordion__link">子メニュー</a>
+                  <a href="#" class="accordion_link">子メニュー</a>
                 </li>
               </ul>
             </div>
           </li>
           <li>
-            <a href="#" class="global-navigation__link">メニュー</a>
+            <a href="#" class="global-navigation_link">メニュー</a>
           </li> 
         </ul>
         <div id="js-focus-trap" tabindex="0"></div>
